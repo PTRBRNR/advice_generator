@@ -1,0 +1,109 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.advice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.advice_container {
+  width: 35rem;
+  height: 21rem;
+  padding: 25px;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  border: 2px solid hsl(150, 100%, 66%, 0.5);
+  box-shadow: 0px 0px 30px 30px hsl(150, 100%, 66%, 0.1);
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(150, 100%, 66%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: -25px;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 20px 0px hsl(150, 100%, 66%);
+  cursor: pointer;
+}
+
+p {
+  color: hsl(150, 100%, 66%);
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+h3 {
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+}
+
+.split-border span {
+  position: relative;
+}
+
+.split-border span::before,
+.split-border span::after {
+  border-top: 1px solid hsl(193, 38%, 86%);
+  content: "";
+  position: absolute;
+  bottom: 18px;
+  width: 12rem;
+}
+
+.split-border span::before {
+  margin-right: 0.7em;
+  right: 100%;
+}
+
+.split-border span::after {
+  margin-left: 0.7em;
+}
+
+span {
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+
+  .advice_container {
+    width: 100%;
+  }
+
+  .split-border span::before,
+  .split-border span::after {
+    width: 100%;
+  }
+}
